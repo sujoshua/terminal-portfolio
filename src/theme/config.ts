@@ -44,7 +44,7 @@ const themes: Themes = {
       scrollHandle: '#C1C1C1',
       scrollHandleHover: '#AAAAAA',
       primary: '#027474',
-      secondary: '#FF9D00',
+      secondary: '#B22222',
       text: {
         100: '#334155',
         200: '#475569',
