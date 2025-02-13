@@ -1,0 +1,90 @@
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+body {
+  font-family: 'LXGW Bright Code', monospace;
+  font-weight: 400;
+  font-size: 1.125rem;
+  background-color: var(--body-color);
+  color: var(--text-color-100);
+}
+
+pre {
+  font-family: monospace;
+}
+
+/* ===== Custom Scroll Bar ===== */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollHandle-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollHandleHover-color);
+}
+
+input[type='text'] {
+  background-color: var(--body-color);
+  color: var(--text-color-100);
+  caret-color: var(--primary-color);
+}
+
+input[type='text']:focus-visible {
+  outline: none;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 0.25rem 0;
+}

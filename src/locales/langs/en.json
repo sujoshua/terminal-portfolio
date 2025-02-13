@@ -1,0 +1,67 @@
+{
+  "command": {
+    "desc": {
+      "about": "about me",
+      "clear": "clear the terminal",
+      "echo": "print out anything",
+      "education": "my education background",
+      "email": "send an email to me",
+      "help": "check available commands",
+      "history": "view command history",
+      "project": "view projects that I've participated",
+      "pwd": "print current working directory",
+      "social": "check out my social accounts",
+      "theme": "check available themes",
+      "welcome": "display hero section",
+      "whoami": "about current user",
+      "lang": "switch language",
+      "tab": "auto complete command",
+      "updown": "go forward/backward in command history"
+    },
+    "name": {
+      "updownArrow": "Up/Down Arrow"
+    }
+  },
+  "project": {
+    "intro": "Here are some projects you can't miss.",
+    "blogTitle": "Joshua's  Blog",
+    "blogDesc": "My personal blog, sharing technical content, let's grow together!",
+    "mirrorTitle": "CQUPT Mirror Station",
+    "mirrorDesc": "Responsible for maintaining and developing the school's open source mirror station, innovatively combining the mirror station with Kubernetes cloud native technology to achieve high availability."
+  },
+  "social": {
+    "intro": "You can find me in these places:",
+    "github": "GitHub",
+    "bilibili": "Bilibili"
+  },
+  "welcome": {
+    "intro": "Welcome to my personal homepage!",
+    "githubLink": "This project is open source and you can find it on {0}.",
+    "helpTip": "For a list of avaliable info about me, please type {0}."
+  },
+  "education": {
+    "intro": "This is my education background:",
+    "cquptTitle": "B.Eng in Computer Science and Technology",
+    "cquptDesc": "Chongqing University of Posts and Telecommunications {'|'} 2021 ~ 2025"
+  },
+  "email": {
+    "intro": "📧 My email is: {0}",
+    "sendMe": "Click {0} to send me an email."
+  },
+  "lang": {
+    "success": "Language switched successfully!"
+  },
+  "theme": {
+    "success": "Theme switched successfully!"
+  },
+  "about": {
+    "name": "Hi👋, my name is {0}.",
+    "location": "I'm a {0} living in Chongqing, China.",
+    "profession": "Full Stack Developer",
+    "intro": "I love programming, enjoy exploring new technologies, and am committed to solving real-world problems."
+  },
+  "usage": {
+    "usage": "usage",
+    "eg": "eg"
+  }
+}

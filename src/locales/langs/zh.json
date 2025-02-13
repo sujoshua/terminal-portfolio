@@ -1,0 +1,67 @@
+{
+  "command": {
+    "desc": {
+      "about": "关于我",
+      "clear": "清空终端屏幕显示",
+      "echo": "打印出任何内容",
+      "education": "我的教育背景",
+      "email": "给我发邮件",
+      "help": "查看可用命令",
+      "history": "查看命令历史",
+      "project": "查看我参与的项目",
+      "pwd": "打印当前工作目录",
+      "social": "查看我的社交账号",
+      "theme": "查看可用主题",
+      "welcome": "显示欢迎信息",
+      "whoami": "打印当前用户",
+      "lang": "切换语言",
+      "tab": "自动补全命令",
+      "updown": "上下翻阅历史命令"
+    },
+    "name": {
+      "updownArrow": "上/下 键"
+    }
+  },
+  "project": {
+    "intro": "这是一些你不能错过的项目",
+    "blogTitle": "Joshua 的个人博客",
+    "blogDesc": "我的个人博客，分享技术内容，让我们一起成长！",
+    "mirrorTitle": "CQUPT 镜像站",
+    "mirrorDesc": "负责维护和开发学校的开源镜像站，创新性地将镜像站与 Kubernetes 云原生技术相结合，实现高可用性。"
+  },
+  "social": {
+    "intro": "你可以在这些地方找到我",
+    "github": "GitHub",
+    "bilibili": "哔哩哔哩"
+  },
+  "welcome": {
+    "intro": "欢迎来的我的个人主页",
+    "githubLink": "本项目已开源，您可以在 {0} 上找到它。",
+    "helpTip": "请输入 {0} 来查看可用命令（更多的了解我）。"
+  },
+  "education": {
+    "intro": "这是我的教育背景：",
+    "cquptTitle": "工学学士 - 计算机科学与技术",
+    "cquptDesc": "重庆邮电大学 {'|'} 2021 ~ 2025"
+  },
+  "email": {
+    "intro": "✉ 我的邮箱是： {0}",
+    "sendMe": "点击{0}发送邮件联系我。"
+  },
+  "lang": {
+    "success": "语言切换成功！"
+  },
+  "theme": {
+    "success": "主题切换成功！"
+  },
+  "about": {
+    "name": "你好👋，我的名字是{0}。",
+    "location": "我是一名居住在中国重庆的{0}。",
+    "profession": "全栈开发者",
+    "intro": "我热爱编程，喜欢探索新技术, 致力于解决现实生活中的问题。"
+  },
+  "usage": {
+    "usage": "用法",
+    "eg": "例子"
+  }
+}
