@@ -5,44 +5,43 @@ issue: https://github.com/vuejs/core/issues/5007
 import { setToLS } from '@/utils/storage'
 import themes, { type Theme } from './config'
 
-export const supportedTheme = Object.keys(themes)
+export const supportedTheme = ['auto', ...Object.keys(themes)]
 
 function setGlobalCssVar(name: string, value: string) {
   document.documentElement.style.setProperty(name, value)
 }
 
-function getDefaultTheme(): string {
+function getDefaultThemeName(): string {
   // from local storage
   const theme = localStorage.getItem('theme')
   if (theme && supportedTheme.includes(theme)) {
     return theme
   }
 
-  // from system preference
-  const systemPrefDark = window.matchMedia('(prefers-color-scheme: dark)')
-  if (systemPrefDark.matches) {
-    return 'dark'
+  return 'auto'
+}
+
+function getTheme(themeName: string): Theme {
+  if (themeName == 'auto') {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return themes['dark']
+    } else {
+      return themes['light']
+    }
   }
 
-  const systemPrefLight = window.matchMedia('(prefers-color-scheme: light)')
-  if (systemPrefLight.matches) {
-    return 'light'
-  }
-
-  // default theme
-  return 'dark'
+  return themes[themeName]
 }
 
 export function setTheme(themeName: string) {
   // invalid theme, use default theme
   if (!supportedTheme.includes(themeName)) {
-    themeName = getDefaultTheme()
+    themeName = getDefaultThemeName()
   } else {
     setToLS('theme', themeName)
   }
 
-  const theme: Theme = themes[themeName]
-
+  const theme: Theme = getTheme(themeName)
   const v: {
     [key: string]: string
   } = {
