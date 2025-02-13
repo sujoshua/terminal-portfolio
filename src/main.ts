@@ -1,4 +1,5 @@
 import './assets/css/main.css'
+import '@joshuasu/lxgwbright-code-web/400.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
