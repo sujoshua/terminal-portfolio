@@ -1,3 +1,5 @@
+import i18n from '@/locales'
+
 export type Social = {
   title: string
   url: string
@@ -34,8 +36,8 @@ export function socialCompletion(input: string): {
   // 2) if input is 'socials go '
   else if (input.startsWith('social go ')) {
     const hints: string[] = []
-    socials.forEach((t, i) => {
-      hints.push(i + 1 + '.' + t.title)
+    socials.forEach((s, i) => {
+      hints.push(i + 1 + '.' + i18n.global.t(s.title))
     })
     return {
       text: input,

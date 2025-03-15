@@ -1,3 +1,4 @@
+import i18n from '@/locales'
 import type { Completion } from './command'
 
 export type Project = {
@@ -46,8 +47,8 @@ export function projectCompletion(input: string): Completion {
   // 2) if input is 'project go '
   else if (input.startsWith('project go ')) {
     const hints: string[] = []
-    projects.forEach((t, index) => {
-      hints.push(index + 1 + '.' + t.title)
+    projects.forEach((p, index) => {
+      hints.push(index + 1 + '.' + i18n.global.t(p.title))
     })
     return {
       text: input,
