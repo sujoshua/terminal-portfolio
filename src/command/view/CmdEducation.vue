@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import GerneralUsage from '@/components/GerneralUsage.vue';
-import type { TermContext } from '@/components/TermContextProvider.vue';
-import { computed, inject } from 'vue';
-import { useI18n } from 'vue-i18n';
+import GerneralUsage from '@/components/GerneralUsage.vue'
+import type { TermContext } from '@/components/TermContextProvider.vue'
+import { computed, inject } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
-const ctx = inject<TermContext>('termContext');
+const ctx = inject<TermContext>('termContext')
 
-const valid = ctx?.cmd === 'education' && ctx?.arg.length === 0;
+const valid = ctx?.cmd === 'education' && ctx?.arg.length === 0
 
 const eduBg = computed(() => [
   {
@@ -16,8 +16,6 @@ const eduBg = computed(() => [
     desc: t('education.cquptDesc'),
   },
 ])
-
-console.log(t('education.cquptDesc'));
 </script>
 
 <template>
@@ -30,7 +28,6 @@ console.log(t('education.cquptDesc'));
   </div>
   <GerneralUsage v-else cmd="education" />
 </template>
-
 
 <style scoped>
 .edu-intro {

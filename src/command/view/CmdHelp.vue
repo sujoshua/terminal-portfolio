@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import AlignList from '@/components/AlignList.vue';
-import commands from '../command';
-import { useI18n } from 'vue-i18n';
-import { computed } from 'vue';
+import AlignList from '@/components/AlignList.vue'
+import commands from '../command'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const cmds = computed(() => {
   return commands.map((item) => {
@@ -12,11 +12,10 @@ const cmds = computed(() => {
       key: item.cmd,
       value: t(item.desc),
     }
-  });
-});
+  })
+})
 
 const shortCuts = computed(() => {
-  console.log(t('command.name.updownArrow'))
   return [
     {
       key: 'Tab or Ctrl + i',
@@ -30,9 +29,8 @@ const shortCuts = computed(() => {
       key: 'Ctrl + l',
       value: t('command.desc.clear'),
     },
-  ];
-});
-
+  ]
+})
 </script>
 
 <template>
